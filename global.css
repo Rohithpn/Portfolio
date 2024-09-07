@@ -1,0 +1,407 @@
+body
+{
+    margin: 0px;
+    padding: 0px;
+    background-color: white;
+    font-family: "SUSE", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    background-image: url("./assets/image/background.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.logo
+{
+    width: 200px;
+    height: 50px;
+    margin-left: 10px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: x-large;
+}
+.navigations
+{
+    display: flex;
+    width: 500px;
+    justify-content: space-around;
+    margin-left: 150px;
+    height: max-content;
+    position: relative;
+}
+nav
+{
+   display: grid;
+   background-color: #222;
+   color:#898989 ;
+   grid-template-columns: 1fr 2fr 1fr;
+   grid-template-rows:60px 3px;
+   justify-content: center;
+   align-items: center;
+}
+.mailimg
+{
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+    color: white;
+}
+.mail
+{
+    display: flex;
+    justify-content: center;
+    height: 30px;
+    align-items: center;
+    padding-right: 5px;
+    width: fit-content;
+    margin-left: 180px;
+    background-color:#0b72f8de;
+    color: aliceblue;
+    padding: 20px 10px;
+    border-radius: 20px;
+    border: none;
+}
+.underline
+{
+    height: 3px;
+    background-color: hsl(190, 93%, 47%);
+    grid-column: span 3;
+}
+.navigations a
+{
+    color: white;
+    position: relative;
+    text-decoration: none;
+    z-index: 1;
+    cursor: pointer;
+}
+.navigations span
+{
+    position: absolute;
+    top: 10px;
+    left: 47px;
+    width: 70px;
+    height: 40px;
+    background: linear-gradient(45deg,hsl(190, 93%, 47%),hsl(190, 93%, 47%));
+    border-radius: 15px;
+    transition: 0.5s;
+}
+.navigations a:nth-child(2):hover~span
+{
+    left: 215px;
+}
+.navigations a:nth-child(3):hover~span
+{
+    left: 380px;
+}
+.logo img
+{
+    width: 30px;
+    height: 30px;
+    margin-right: 5px;
+}
+.content
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   
+    
+}
+.pic-info
+{
+    width: 800px;
+    height: 500px;
+    border-radius: 20px;
+    display: grid;
+    grid-template-columns: 400px 400px;
+    grid-template-rows: 500px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 150px;
+}
+#profilepic
+{
+    height: 300px;
+    width: 300px;
+    border-radius: 50%;
+    margin-left: 20px;
+}
+.profile-info
+{
+    display: flex;
+    width: 300px;
+    height: 200px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.3rem;
+}
+.profile-info>*
+{
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+.profile-info>h3,h2
+{
+    color: grey;
+}
+.profile-info>h1
+{
+    color: white;
+}
+.profile-info-buttons {
+    display: flex;
+    gap: 50px;
+    margin-top: 10px;
+    
+  }
+  
+  .profile-info-buttons > button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    font-size: medium;
+    border-radius: 20px;
+    padding: 8px 10px;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    background-color:hsla(0, 0%, 96%, 0.5) ;
+    border: 2px solid transparent;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+}
+
+  
+  .profile-info-buttons > button > img {
+    width: 25px;
+    height: 25px;
+    transition: opacity 0.3s ease;
+  }
+  
+  .profile-info-buttons > button > span {
+    color: initial;
+    transition: color 0.3s ease;
+  }
+  
+  .profile-info-buttons > button:first-child:hover {
+    background-color: #2c2b2b;
+  }
+  
+  .profile-info-buttons > button:first-child:hover > span {
+    color: hsl(120, 83%, 62%);
+  }
+  
+  .profile-info-buttons > button:first-child:hover img {
+    opacity: 0;
+  }
+  
+  .profile-info-buttons > button:first-child::before {
+    content: "";
+    position: absolute;
+    top: 8px;
+    left: 10px;
+    width: 25px;
+    height: 25px;
+    background-image: url('./assets/image/Github_logo_svg.webp');
+    background-size: cover;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+  
+  .profile-info-buttons > button:first-child:hover::before {
+    opacity: 1;
+  }
+  
+  .profile-info-buttons > button:nth-child(2):hover {
+    background-color: rgb(56, 103, 167);
+  }
+  
+  .profile-info-buttons > button:nth-child(2):hover > span {
+    color: white;
+  }
+  
+  .profile-info-buttons > button:nth-child(2):hover img {
+    opacity: 0;
+  }
+  
+  .profile-info-buttons > button:nth-child(2)::before {
+    content: "";
+    position: absolute;
+    top: 8px;
+    left: 10px;
+    width: 25px;
+    height: 25px;
+    background-image: url('./assets/image/linkedin-dark.png');
+    background-size: cover;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+  
+  .profile-info-buttons > button:nth-child(2):hover::before {
+    opacity: 1;
+  }
+  .certificate-container {
+    width: 70%;
+    margin: 150px auto 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 100px auto;
+    gap: 50px;
+    justify-items: center;
+    align-items: center;
+    background-color: hsla(0, 0%, 96%, 0.5); /* Semi-transparent background */
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    backdrop-filter: blur(10px); /* Blur effect */
+    -webkit-backdrop-filter: blur(10px); /* For Safari */
+}
+
+.certificate {
+    width: 500px;
+    height: 300px;
+    border: 1px solid #ddd;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.certificate:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.certificate-container h1 {
+    grid-column: span 2;
+    text-align: center;
+    font-family: 'Arial', sans-serif;
+    font-size: 2em;
+    color: #333;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+}
+
+.certificate img {
+    width: 200px;
+    height: 150px;
+    margin-top: 10px;
+    border-radius: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.certificate h3 {
+    margin: 10px 0;
+    font-family: 'Arial', sans-serif;
+    color: #555;
+    font-size: 1.2em;
+}
+
+.certificate p {
+    text-align: center;
+    font-family: 'Arial', sans-serif;
+    color: #666;
+    line-height: 1.6;
+}
+
+.certificate-container * {
+    margin: 0 10px;
+}
+.skill-certificate
+{
+    display: flex;
+    width: 100%;
+}
+.skills {
+    width: 20%;
+    background-color: hsla(0, 0%, 96%, 0.5);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+    margin: 150px auto 0;
+    text-align: center;
+    padding: 20px;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    font-family: 'Arial', sans-serif;
+    color: #333;
+}
+footer{
+    width: 100%;
+    height: 300px;
+    margin-top: 150px;
+}
+.footernav
+{
+    display: flex;
+    color: white;
+    justify-content: flex-start;
+    gap: 350px;
+}
+.quicklink
+{
+    margin-bottom: 15px;
+}
+.quicklink li
+{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.quicklink li img
+{
+    width: 20px;
+    height: 20px;
+}
+.quickcontact ul a
+{
+    cursor: pointer;
+    transition: 0.5s;
+    text-decoration: none;
+    color: white;
+}
+.quickcontact ul a:nth-child(1):hover
+{
+    color: rgb(242,166,12);
+}
+.quickcontact ul a:nth-child(2):hover
+{
+    color: rgb(225, 48, 108);
+}
+.quickcontact ul a:nth-child(3):hover
+{
+    color: rgb(0, 119, 181);
+}
+.underfooter
+{
+    width: 70%;
+    height: 80px;
+    background-color: hsl(0, 1%, 29%);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.footer-content
+{
+    display: flex;
+    flex-direction: column;
+    background-color: #222;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    gap: 10px;
+}
