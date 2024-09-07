@@ -263,10 +263,11 @@ nav
     padding: 20px;
     backdrop-filter: blur(10px); /* Blur effect */
     -webkit-backdrop-filter: blur(10px); /* For Safari */
+    
 }
 
 .certificate {
-    width: 500px;
+    width: fit-content;
     height: 300px;
     border: 1px solid #ddd;
     border-radius: 20px;
@@ -278,6 +279,7 @@ nav
     background-color: white;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s, box-shadow 0.3s;
+    
 }
 
 .certificate:hover {
