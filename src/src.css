@@ -7,8 +7,7 @@ body
     font-family: "Inconsolata", monospace;
     font-optical-sizing: auto;
     font-style: normal;
-    font-variation-settings:
-      "wdth" 100;
+    font-variation-settings:"wdth" 100;
 }
 .body-content
 {
@@ -17,6 +16,8 @@ body
     align-items: center;
     margin-top: 100px;
     width: 100%;
+    flex-direction: column;
+    gap: 100px;
 }
 .profilepic
 {
@@ -166,4 +167,68 @@ h1,h2
     font-size: 13px;
     margin-top: 10px;
     text-align: center;
+}
+.skill-container
+{
+    width: auto;
+    height:  auto;
+    display: flex;
+    flex-direction: row;
+    gap: 25px;
+}
+.skill-list-container
+{
+    position: relative;
+    border-radius: 20px;
+    background-color: hsla(0, 0%, 0%, 0.422); 
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    backdrop-filter: blur(10px); 
+    -webkit-backdrop-filter: blur(10px); 
+    text-align: center;
+}
+.skill-list li
+{
+    color: white;
+    display: flex;
+    align-items: center;
+    transition: 0.5s;
+    margin-bottom: 15px;
+    font-size: larger;
+    cursor: pointer;
+}
+.web li img
+{
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+}
+.web li:nth-child(1):hover
+{
+    color: rgb(190, 64, 0);
+}
+.web li:nth-child(2):hover
+{
+    color: rgb(80, 120, 230)
+}
+.web li:nth-child(3):hover
+{
+    color: rgb(244, 218, 10)
+}
+.web li:nth-child(4):hover
+{
+    color: rgb(13,231,201)
+}
+.web li:nth-child(5):hover
+{
+    color: rgb(78,120,48)
+}
+.web li:nth-child(6):hover
+{
+    color: rgb(55, 101, 127)
+}
+.technical-skill
+{
+    display: flex;
 }
