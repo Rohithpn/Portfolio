@@ -26,7 +26,7 @@ body
 .navigations
 {
     display: flex;
-    width: 500px;
+    width: 500px; 
     justify-content: space-around;
     margin-left: 150px;
     height: max-content;
